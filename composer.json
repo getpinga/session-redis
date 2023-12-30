@@ -2,13 +2,20 @@
 	"name": "pinga/session-redis",
 	"description": "Modern session management for PHP",
 	"require": {
-		"php": ">=8.2.0",
+		"php": ">=8.2.0",	
+		"ext-redis": "*",
 		"pinga/http": "^0.1"
 	},
 	"type": "library",
 	"keywords": [ "http", "csrf", "xss", "samesite", "same-site" ],
 	"homepage": "https://github.com/getpinga/session-redis",
 	"license": "MIT",
+	"provide": {
+		"pinga/session": "0.2.1"
+	},
+	"replace": {
+		"pinga/session": "0.2.1"
+	},
 	"autoload": {
 		"psr-4": {
 			"Pinga\\Session\\": "src/"
