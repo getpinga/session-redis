@@ -4,7 +4,6 @@ namespace Pinga\Session;
 
 use Pinga\Http\ResponseHeader;
 use Predis\Client as RedisClient;
-use Delight\Http\ResponseHeader;
 
 final class Session
 {
